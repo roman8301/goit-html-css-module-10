@@ -201,7 +201,7 @@ a {
 }
 
 /* MAIN */
-/* Hero */
+/* Section Hero */
 .section-hero {
   padding-top: 248px;
   padding-bottom: 230px;
@@ -253,7 +253,7 @@ a {
   cursor: pointer;
 }
 
-/* Services */
+/* Section Services */
 .services {
   padding-top: 46px;
   padding-bottom: 90px;
@@ -295,7 +295,6 @@ a {
   margin: 40px auto 0;
 }
 
-/* Services */
 .services-list {
   display: flex;
   flex-wrap: wrap;
@@ -355,7 +354,7 @@ a {
   color: var(--second-font-color);
 }
 
-/* Team */
+/* Section Team */
 .team {
   padding-bottom: 82px;
 }
@@ -400,7 +399,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to top, rgba(252, 227, 138, 0.9), rgba(243, 129, 129, 0.9));
+  background: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
   transition: all 0.2s linear;
   visibility: hidden;
   opacity: 0;
@@ -442,7 +441,7 @@ a {
   box-shadow: 10px 10px #95e1d3;
 }
 
-.team-list__item:hover .team__img {
+.team-list__item:hover .team-list__img {
   transform: translate(-10px, -10px);
 }
 
@@ -509,14 +508,14 @@ a {
   padding: 10px 0 12px;
 }
 
-.copiright {
+.copiright__text {
   font-family: var(--first-font);
   font-size: 14px;
   font-weight: 400;
   color: var(--main-font-color);
 }
 
-.copiright-link {
+.copiright__text-link {
   color: var(--section-color);
 }
 
@@ -539,6 +538,21 @@ a {
   font-weight: 300;
   font-style: italic;
   color: #cccccc;
+}
+
+.contact-form__input:required:focus,
+.message:required:focus {
+  outline: none;
+}
+
+.contact-form__input:required:focus:invalid:not(:placeholder-shown),
+.message:required:focus:invalid:not(:placeholder-shown) {
+  border-color: red;
+}
+
+.contact-form__input:required:focus:valid:not(:placeholder-shown),
+.message:required:focus:valid:not(:placeholder-shown) {
+  border-color: green;
 }
 
 .contact-form__button {
