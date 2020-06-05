@@ -310,27 +310,6 @@ a {
   background-position: 20px top;
 }
 
-.services__item:not(:nth-last-child(-n + 3)) {
-  margin-bottom: 98px;
-}
-
-.services__item__title {
-  font-family: var(--first-font);
-  font-size: 14px;
-  font-weight: 400;
-  color: var(--main-font-color);
-  text-transform: uppercase;
-  margin-bottom: 16px;
-}
-
-.services__item__description {
-  font-family: var(--second-font);
-  font-size: 15px;
-  line-height: 24px;
-  font-weight: 300;
-  color: var(--second-font-color);
-}
-
 .services__icon-photo {
   background-image: url('../img/icon/alarm.svg');
 }
@@ -353,6 +332,27 @@ a {
 
 .services__icon-digital {
   background-image: url('../img/icon/aim.svg');
+}
+
+.services__item:not(:nth-last-child(-n + 3)) {
+  margin-bottom: 98px;
+}
+
+.services__item-title {
+  font-family: var(--first-font);
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--main-font-color);
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.services__item-description {
+  font-family: var(--second-font);
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 300;
+  color: var(--second-font-color);
 }
 
 /* Team */
