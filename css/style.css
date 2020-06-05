@@ -303,8 +303,8 @@ a {
 }
 
 .services__item {
-  text-align: left;
   width: 366px;
+  text-align: left;
   padding-left: 72px;
   background-repeat: no-repeat;
   background-position: 20px top;
