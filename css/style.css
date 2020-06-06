@@ -79,6 +79,10 @@ a {
   text-decoration: none;
 }
 
+button {
+  outline: none;
+}
+
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -203,6 +207,7 @@ a {
 
 .nav-actions-btn {
   border: none;
+  outline: none;
   background-color: transparent;
   cursor: pointer;
 }
