@@ -135,7 +135,7 @@ button {
   width: 90%;
 }
 
-.logo {
+.header__logo {
   color: var(--nav-color);
   font-size: 30px;
   font-weight: 700;
@@ -157,9 +157,9 @@ button {
   text-transform: uppercase;
   color: var(--nav-color);
   position: relative;
-  -webkit-transition: all 0.3s linear;
-  -o-transition: all 0.3s linear;
-  transition: all 0.3s linear;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
 }
 
 .nav-menu__link:hover,
@@ -177,9 +177,9 @@ button {
   bottom: -10px;
   opacity: 0;
   visibility: hidden;
-  -webkit-transition: all 0.3s linear;
-  -o-transition: all 0.3s linear;
-  transition: all 0.3s linear;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
 }
 
 .nav-menu__link:hover::after,
@@ -212,13 +212,13 @@ button {
   cursor: pointer;
 }
 
-.nav-actions__icon-basket {
+.nav-actions__icon--basket {
   width: 18px;
   height: 15px;
   fill: var(--nav-color);
 }
 
-.nav-actions__icon-magnifier {
+.nav-actions__icon--magnifier {
   width: 18px;
   height: 18px;
   fill: var(--nav-color);
@@ -288,6 +288,13 @@ button {
   border: 3px solid #fff;
   padding: 12px 30px;
   cursor: pointer;
+  transition: all 0.2s linear;
+}
+
+.hero-btn:hover {
+  background-color: rgba(243, 129, 129, 0.5);
+  border-color: transparent;
+  box-shadow: 0 0 15px #888888;
 }
 
 /* Section Services */
@@ -350,27 +357,27 @@ button {
   background-position: 20px top;
 }
 
-.services__icon-photo {
+.services__item--icon-photo {
   background-image: url('../img/icon/alarm.svg');
 }
 
-.services__icon-design {
+.services__item--icon-design {
   background-image: url('../img/icon/graph.svg');
 }
 
-.services__icon-creativ {
+.services__item--icon-creativ {
   background-image: url('../img/icon/monitor.svg');
 }
 
-.services__icon-seo {
+.services__item--icon-seo {
   background-image: url('../img/icon/book.svg');
 }
 
-.services__icon-css-html {
+.services__item--icon-css-html {
   background-image: url('../img/icon/home.svg');
 }
 
-.services__icon-digital {
+.services__item--icon-digital {
   background-image: url('../img/icon/aim.svg');
 }
 
@@ -411,6 +418,9 @@ button {
   font-weight: 400;
   text-align: center;
   color: var(--second-font-color);
+}
+
+.team__description--indent {
   padding: 0 130px;
   margin-bottom: 90px;
 }
@@ -673,7 +683,7 @@ button {
   width: 150px;
   height: 40px;
   border: none;
-  font-family: var(--main-font);
+  font-family: var(--first-font);
   font-size: 14px;
   font-weight: 700;
   text-align: center;
